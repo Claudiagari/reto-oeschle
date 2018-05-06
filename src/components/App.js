@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header'
 import Board from './Board'
 import buildCasino from '../utils/buildCasino'
+import swal from 'sweetalert'
 
 const getStateInitial = () => {
   const casino = buildCasino();
@@ -13,6 +14,7 @@ const getStateInitial = () => {
     
   }
 }
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -72,8 +74,8 @@ class App extends Component {
   }
  checkWinner(casino){
    if (casino.filter((card) => !card.itWasGuessed).length === 0){
-      alert(`Juego terminado en ${this.state.numberOfAttemps} intentos`)
-   }
+    swal(`Juego Terminado en ${this.state.numberOfAttemps +1} intentos`)
+  }
  }
  resetGame(){
    this.setState(

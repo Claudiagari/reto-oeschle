@@ -9,3 +9,13 @@
   left:12px;
   top:75px
 }
+h1.title{
+  margin-top: 5px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #324003;
+}
+h2.title{
+  color: #fff;
+}

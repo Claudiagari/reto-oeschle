@@ -1,6 +1,8 @@
 .card{
   width:125px;
   height: 125px;
+  background-color: transparent;
+  border: 0
 }
 
 .image-card{
@@ -20,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:#003615
 }
 .ReactFlipCard{
   width: 100%;
