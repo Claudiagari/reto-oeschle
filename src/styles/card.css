@@ -1,0 +1,27 @@
+.card{
+  width:125px;
+  height: 125px;
+}
+
+.image-card{
+  width:125px;
+  height: 125px;
+}
+.front{
+  width:125px;
+  height: 125px;
+  background: url('../assets/images/casino-games.png')no-repeat center center;
+  background-size: cover;
+  background-color:#980200;
+}
+.content{
+  width:125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ReactFlipCard{
+  width: 100%;
+  height:100% ;
+}
