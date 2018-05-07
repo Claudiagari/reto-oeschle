@@ -1,8 +1,8 @@
 .board{
  display: flex;
  flex-wrap: wrap;
- width: 600px;
- height: 300px;
+ width: 800px;
+ height:450px;
  margin: 15px auto;
  justify-content: space-around;
 }

@@ -1,24 +1,24 @@
 .card{
-  width:125px;
-  height: 125px;
+  width:175px;
+  height: 175px;
   background-color: transparent;
   border: 0
 }
 
 .image-card{
-  width:125px;
-  height: 125px;
+  width:175px;
+  height: 175px;
 }
 .front{
-  width:125px;
-  height: 125px;
+  width:175px;;
+  height: 175px;;
   background: url('../assets/images/casino-games.png')no-repeat center center;
   background-size: cover;
   background-color:#980200;
 }
 .content{
-  width:125px;
-  height: 125px;
+  width:175px;
+  height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
