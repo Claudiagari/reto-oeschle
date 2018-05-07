@@ -10,8 +10,8 @@ const getStateInitial = () => {
     casino,
     coupleSelected: [],
     isComparing: false,
-    numberOfAttemps : 0
-    
+    numberOfAttemps: 0
+
   }
 }
 
@@ -23,9 +23,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header 
-        numberOfAttemps = {this.state.numberOfAttemps}
-        resetGame = {() => this.resetGame()}
+        <Header
+          numberOfAttemps={this.state.numberOfAttemps}
+          resetGame={() => this.resetGame()}
         />
         <Board
           casino={this.state.casino}
@@ -36,7 +36,6 @@ class App extends Component {
     );
   }
   cardSelected(card) {
-
     if (this.state.isComparing || this.state.coupleSelected.indexOf(card) > -1 || card.itWasGuessed) {
       return;
     }
@@ -44,7 +43,6 @@ class App extends Component {
     this.setState({
       coupleSelected
     })
-
     if (coupleSelected.length === 2) {
       this.compareCouple(coupleSelected)
     }
@@ -59,7 +57,7 @@ class App extends Component {
           if (card.image !== firstCard.image) {
             return card
           }
-          return { ...card, itWasGuessed: true ,hidden:true}
+          return { ...card, itWasGuessed: true, hidden: true }
         })
       }
       this.checkWinner(casino);
@@ -68,19 +66,19 @@ class App extends Component {
         casino,
         isComparing: false,
         numberOfAttemps: this.state.numberOfAttemps + 1
-        
+
       })
     }, 1000)
   }
- checkWinner(casino){
-   if (casino.filter((card) => !card.itWasGuessed).length === 0){
-    swal(`Juego Terminado en ${this.state.numberOfAttemps +1} intentos`)
+  checkWinner(casino) {
+    if (casino.filter((card) => !card.itWasGuessed).length === 0) {
+      swal(`Juego Terminado en ${this.state.numberOfAttemps + 1} intentos`)
+    }
   }
- }
- resetGame(){
-   this.setState(
-     getStateInitial()
-   );
- }
+  resetGame() {
+    this.setState(
+      getStateInitial()
+    );
+  }
 }
 export default App;

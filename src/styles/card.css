@@ -1,24 +1,24 @@
 .card{
-  width:175px;
-  height: 175px;
+  width:115px;
+  height:115px;
   background-color: transparent;
-  border: 0
+  border: 0;
+  cursor: pointer;
 }
-
 .image-card{
-  width:175px;
-  height: 175px;
+  width:115px;
+  height:115px;
 }
 .front{
-  width:175px;;
-  height: 175px;;
+  width:115px;;
+  height: 115px;;
   background: url('../assets/images/casino-games.png')no-repeat center center;
   background-size: cover;
   background-color:#980200;
 }
 .content{
-  width:175px;
-  height: 175px;
+  width:115px;
+  height: 115px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,4 +27,22 @@
 .ReactFlipCard{
   width: 100%;
   height:100% ;
+}
+@media(min-width:768px){
+  .card{
+    width:175px;
+    height: 175px;
+  }
+  .image-card{
+    width:175px;
+    height: 175px;
+  }
+  .front{
+    width:175px;
+    height: 175px;
+  }
+  .content{
+    width:175px;
+    height: 175px;
+  }
 }
